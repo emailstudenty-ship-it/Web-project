@@ -1,0 +1,76 @@
+<!-- START OF: services.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الخدمات | سوق الخدمات الطلابية</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<header class="bg-white shadow sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+    <a href="index.html" class="text-xl font-bold text-indigo-600">🎓 سوق الطلاب</a>
+    <button onclick="document.getElementById('m').classList.toggle('hidden')" class="xl:hidden text-2xl">☰</button>
+    <nav id="m" class="hidden xl:flex absolute xl:static top-full inset-x-0 bg-white xl:bg-transparent flex-col xl:flex-row gap-3 p-4 xl:p-0 text-sm font-medium shadow xl:shadow-none">
+      <a href="index.html" class="hover:text-indigo-600">الرئيسية</a>
+      <a href="services.html" class="hover:text-indigo-600">الخدمات</a>
+      <a href="service-details.html" class="hover:text-indigo-600">التفاصيل</a>
+      <a href="request-service.html" class="hover:text-indigo-600">طلب خدمة</a>
+      <a href="categories.html" class="hover:text-indigo-600">التصنيفات</a>
+      <a href="add-service.html" class="hover:text-indigo-600">إضافة خدمة</a>
+      <a href="providers.html" class="hover:text-indigo-600">المزودون</a>
+      <a href="about.html" class="hover:text-indigo-600">من نحن</a>
+      <a href="contact.html" class="hover:text-indigo-600">تواصل معنا</a>
+      <a href="faq.html" class="hover:text-indigo-600">الأسئلة الشائعة</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold mb-6">جميع الخدمات</h1>
+  <div class="flex flex-col sm:flex-row gap-3 mb-8">
+    <input id="q" type="text" placeholder="ابحث عن خدمة..." class="flex-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+    <select id="cat" class="border rounded-lg px-4 py-2 bg-white">
+      <option value="">كل التصنيفات</option>
+      <option>دروس خصوصية</option>
+      <option>تصميم</option>
+      <option>طباعة</option>
+      <option>ترجمة</option>
+    </select>
+  </div>
+  <div id="list" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="دروس خصوصية"><span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">دروس خصوصية</span><h3 class="font-bold mt-3">شرح برمجة بايثون</h3><p class="text-sm text-slate-600 my-2">أساسيات البرمجة مع تمارين.</p><div class="flex justify-between"><b class="text-indigo-600">100 ج.م</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="تصميم"><span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded">تصميم</span><h3 class="font-bold mt-3">تصميم شعار وهوية</h3><p class="text-sm text-slate-600 my-2">شعارات للفعاليات والمشاريع.</p><div class="flex justify-between"><b class="text-indigo-600">250 ج.م</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="طباعة"><span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">طباعة</span><h3 class="font-bold mt-3">طباعة وتغليف أبحاث</h3><p class="text-sm text-slate-600 my-2">طباعة ملونة وتجليد سريع.</p><div class="flex justify-between"><b class="text-indigo-600">2 ج.م / ورقة</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="ترجمة"><span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded">ترجمة</span><h3 class="font-bold mt-3">ترجمة مقالات تقنية</h3><p class="text-sm text-slate-600 my-2">ترجمة من الإنجليزية إلى العربية.</p><div class="flex justify-between"><b class="text-indigo-600">50 ج.م / صفحة</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="دروس خصوصية"><span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">دروس خصوصية</span><h3 class="font-bold mt-3">مراجعة رياضيات</h3><p class="text-sm text-slate-600 my-2">مراجعة قبل الامتحانات.</p><div class="flex justify-between"><b class="text-indigo-600">80 ج.م</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="item bg-white rounded-xl shadow p-5" data-cat="تصميم"><span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded">تصميم</span><h3 class="font-bold mt-3">تصميم عروض تقديمية</h3><p class="text-sm text-slate-600 my-2">عروض احترافية للمشاريع.</p><div class="flex justify-between"><b class="text-indigo-600">120 ج.م</b><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+  </div>
+  <p id="none" class="hidden text-center text-slate-500 mt-10">لا توجد نتائج مطابقة.</p>
+</main>
+
+<footer class="text-center text-sm text-slate-500 py-6 border-t">© 2026 سوق الخدمات الطلابية</footer>
+
+<script>
+  const q = document.getElementById('q');
+  const cat = document.getElementById('cat');
+  const items = document.querySelectorAll('.item');
+  function filter() {
+    const text = q.value.trim().toLowerCase();
+    let shown = 0;
+    items.forEach(function (el) {
+      const okText = el.textContent.toLowerCase().includes(text);
+      const okCat = !cat.value || el.dataset.cat === cat.value;
+      const show = okText && okCat;
+      el.classList.toggle('hidden', !show);
+      if (show) shown++;
+    });
+    document.getElementById('none').classList.toggle('hidden', shown > 0);
+  }
+  q.addEventListener('input', filter);
+  cat.addEventListener('change', filter);
+</script>
+</body>
+</html>
+<!-- END OF: services.html -->

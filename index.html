@@ -1,0 +1,61 @@
+<!-- START OF: index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سوق الخدمات الطلابية</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<header class="bg-white shadow sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+    <a href="index.html" class="text-xl font-bold text-indigo-600">🎓 سوق الطلاب</a>
+    <button onclick="document.getElementById('m').classList.toggle('hidden')" class="xl:hidden text-2xl">☰</button>
+    <nav id="m" class="hidden xl:flex absolute xl:static top-full inset-x-0 bg-white xl:bg-transparent flex-col xl:flex-row gap-3 p-4 xl:p-0 text-sm font-medium shadow xl:shadow-none">
+      <a href="index.html" class="hover:text-indigo-600">الرئيسية</a>
+      <a href="services.html" class="hover:text-indigo-600">الخدمات</a>
+      <a href="service-details.html" class="hover:text-indigo-600">التفاصيل</a>
+      <a href="request-service.html" class="hover:text-indigo-600">طلب خدمة</a>
+      <a href="categories.html" class="hover:text-indigo-600">التصنيفات</a>
+      <a href="add-service.html" class="hover:text-indigo-600">إضافة خدمة</a>
+      <a href="providers.html" class="hover:text-indigo-600">المزودون</a>
+      <a href="about.html" class="hover:text-indigo-600">من نحن</a>
+      <a href="contact.html" class="hover:text-indigo-600">تواصل معنا</a>
+      <a href="faq.html" class="hover:text-indigo-600">الأسئلة الشائعة</a>
+    </nav>
+  </div>
+</header>
+
+<section class="bg-gradient-to-l from-indigo-600 to-purple-600 text-white">
+  <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4">خدمات يقدمها الطلاب... للطلاب</h1>
+    <p class="mb-8 text-indigo-100 max-w-2xl mx-auto">منصة تجمع الطلاب المهرة مع زملائهم الباحثين عن مساعدة في الدروس والتصميم والطباعة وغيرها.</p>
+    <a href="services.html" class="bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg inline-block hover:bg-indigo-50">تصفح الخدمات</a>
+    <a href="add-service.html" class="border border-white px-6 py-3 rounded-lg inline-block mr-2 hover:bg-white/10">قدّم خدمتك</a>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-center mb-8">لماذا سوق الطلاب؟</h2>
+  <div class="grid gap-6 md:grid-cols-3">
+    <div class="bg-white p-6 rounded-xl shadow text-center"><div class="text-4xl mb-2">💸</div><h3 class="font-bold mb-1">أسعار مناسبة</h3><p class="text-sm text-slate-600">أسعار تناسب ميزانية الطالب.</p></div>
+    <div class="bg-white p-6 rounded-xl shadow text-center"><div class="text-4xl mb-2">🤝</div><h3 class="font-bold mb-1">ثقة بين الزملاء</h3><p class="text-sm text-slate-600">تتعامل مع طلاب من جامعتك أو كليتك.</p></div>
+    <div class="bg-white p-6 rounded-xl shadow text-center"><div class="text-4xl mb-2">⚡</div><h3 class="font-bold mb-1">سرعة وسهولة</h3><p class="text-sm text-slate-600">اطلب الخدمة أو انشرها في دقائق.</p></div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 pb-12">
+  <h2 class="text-2xl font-bold mb-6">أحدث الخدمات</h2>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="bg-white rounded-xl shadow p-5"><span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">دروس خصوصية</span><h3 class="font-bold mt-3">شرح برمجة بايثون</h3><p class="text-sm text-slate-600 my-2">شرح الأساسيات مع تمارين عملية.</p><div class="flex justify-between items-center"><span class="font-bold text-indigo-600">100 ج.م / ساعة</span><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="bg-white rounded-xl shadow p-5"><span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded">تصميم</span><h3 class="font-bold mt-3">تصميم شعار وهوية</h3><p class="text-sm text-slate-600 my-2">شعارات للمشاريع والفعاليات الطلابية.</p><div class="flex justify-between items-center"><span class="font-bold text-indigo-600">250 ج.م</span><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+    <div class="bg-white rounded-xl shadow p-5"><span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">طباعة</span><h3 class="font-bold mt-3">طباعة وتغليف أبحاث</h3><p class="text-sm text-slate-600 my-2">طباعة ملونة وتجليد بسرعة.</p><div class="flex justify-between items-center"><span class="font-bold text-indigo-600">من 2 ج.م / ورقة</span><a href="service-details.html" class="text-sm text-indigo-600 hover:underline">التفاصيل</a></div></div>
+  </div>
+  <div class="text-center mt-8"><a href="services.html" class="text-indigo-600 font-bold hover:underline">عرض كل الخدمات ←</a></div>
+</section>
+
+<footer class="text-center text-sm text-slate-500 py-6 border-t">© 2026 سوق الخدمات الطلابية</footer>
+</body>
+</html>
+<!-- END OF: index.html -->

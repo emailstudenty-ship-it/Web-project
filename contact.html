@@ -1,0 +1,62 @@
+<!-- START OF: contact.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا | سوق الخدمات الطلابية</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+<header class="bg-white shadow sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between relative">
+    <a href="index.html" class="text-xl font-bold text-indigo-600">🎓 سوق الطلاب</a>
+    <button onclick="document.getElementById('m').classList.toggle('hidden')" class="xl:hidden text-2xl">☰</button>
+    <nav id="m" class="hidden xl:flex absolute xl:static top-full inset-x-0 bg-white xl:bg-transparent flex-col xl:flex-row gap-3 p-4 xl:p-0 text-sm font-medium shadow xl:shadow-none">
+      <a href="index.html" class="hover:text-indigo-600">الرئيسية</a>
+      <a href="services.html" class="hover:text-indigo-600">الخدمات</a>
+      <a href="service-details.html" class="hover:text-indigo-600">التفاصيل</a>
+      <a href="request-service.html" class="hover:text-indigo-600">طلب خدمة</a>
+      <a href="categories.html" class="hover:text-indigo-600">التصنيفات</a>
+      <a href="add-service.html" class="hover:text-indigo-600">إضافة خدمة</a>
+      <a href="providers.html" class="hover:text-indigo-600">المزودون</a>
+      <a href="about.html" class="hover:text-indigo-600">من نحن</a>
+      <a href="contact.html" class="hover:text-indigo-600">تواصل معنا</a>
+      <a href="faq.html" class="hover:text-indigo-600">الأسئلة الشائعة</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10">
+  <h1 class="text-3xl font-bold mb-6">تواصل معنا</h1>
+  <div class="grid gap-6 md:grid-cols-3">
+    <div class="bg-white rounded-xl shadow p-6 h-fit space-y-3 text-sm text-slate-600">
+      <p>📍 الإسكندرية، مصر</p>
+      <p>✉️ info@student-market.example</p>
+      <p>📱 0100 000 0000</p>
+    </div>
+    <div class="md:col-span-2">
+      <div id="ok" class="hidden bg-emerald-100 text-emerald-800 p-4 rounded-lg mb-4">✅ تم إرسال رسالتك بنجاح. شكراً لتواصلك!</div>
+      <form id="f" class="bg-white rounded-xl shadow p-6 space-y-4">
+        <div><label class="block text-sm font-medium mb-1">الاسم</label><input required type="text" class="w-full border rounded-lg px-3 py-2"></div>
+        <div><label class="block text-sm font-medium mb-1">البريد الإلكتروني</label><input required type="email" class="w-full border rounded-lg px-3 py-2"></div>
+        <div><label class="block text-sm font-medium mb-1">الموضوع</label><input required type="text" class="w-full border rounded-lg px-3 py-2"></div>
+        <div><label class="block text-sm font-medium mb-1">الرسالة</label><textarea required rows="5" class="w-full border rounded-lg px-3 py-2"></textarea></div>
+        <button class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">إرسال الرسالة</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center text-sm text-slate-500 py-6 border-t">© 2026 سوق الخدمات الطلابية</footer>
+
+<script>
+  document.getElementById('f').addEventListener('submit', function (e) {
+    e.preventDefault();
+    document.getElementById('ok').classList.remove('hidden');
+    this.reset();
+  });
+</script>
+</body>
+</html>
+<!-- END OF: contact.html -->
